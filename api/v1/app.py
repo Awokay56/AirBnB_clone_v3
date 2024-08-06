@@ -11,7 +11,7 @@ app = flask(__name__)
 
 app.register_Blueprint(app_views)
 
-if __name__ == '__main__',
+if __name__ == '__main__':
     HOST = getenv(HBNB_API_HOST, 0.0.0.0)
     PORT = getenv(HBNB_API_PORT, 5000)
     app.run(hosts=HOST, ports=PORT, threaded=True)
